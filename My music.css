@@ -1,0 +1,78 @@
+
+.background{
+    height:90%;
+    width:100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 20%;  
+    left: 15%; 
+    width: 60%; 
+    height: 30%;
+    border-radius: 50%;
+    object-fit: cover;        
+    border: 20px solid rgba(128, 128, 128, 0.5); 
+    z-index: 2;      
+    animation: rotation 5s linear infinite; 
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text-overlay{
+    position: absolute;
+            top: 3%;
+            left: 25%;            
+            color: white;
+            font-size: 2em; 
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);            
+}
+.overlay-rectangle {
+    width: 100%;
+    height: 70px; 
+    background-color: black;
+}
+.text-overlays{
+    position: absolute;
+            top: 58%;
+            left: 25%;            
+            color: yellow;
+            font-size: 2.5em; 
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+            z-index: 2;
+}
+.text-overlayer{
+    position: absolute;
+            top: 63%;
+            left: 40%;            
+            color: black;
+            font-size: 1em; 
+            z-index: 2;
+            
+}
+.transparent-box{
+    width: 90%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    border: 2px solid pink;
+    border-radius: 60px;
+    z-index: 1;
+}
+.audio-controls {
+    position: absolute;
+    top: 70%;
+    left: 13%;   
+    z-index: 2; 
+  
+}
